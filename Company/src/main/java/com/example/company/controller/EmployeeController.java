@@ -20,6 +20,10 @@ import com.example.company.service.EmployeeServiceImpl;
 public class EmployeeController {
 	@Autowired
 	private EmployeeServiceImpl employeeService;
+	@GetMapping("/test")
+	public String test() {
+		return "azure cicd test";
+	}
 	@GetMapping("/get-employees")
 	public ResponseEntity<List<Employee>> getAllEmployees(){
 		List<Employee> employees = employeeService.getAllEmployees();
