@@ -14,6 +14,6 @@ class CompanyApplicationTests {
 
 	@Test
 	public void test() {
-		assertEquals(10, 10);
+		assertEquals(10, 20);
 	}
 }
